@@ -1,2 +1,6 @@
 # Default ignored files
 /workspace.xml
+/compiler.xml
+/inspectionProfiles/Project_Default.xml
+/jarRepositories.xml
+/.name
