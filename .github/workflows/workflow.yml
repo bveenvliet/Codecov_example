@@ -1,7 +1,25 @@
-name: Codecov
-  # You may pin to the exact commit or the version.
-  # uses: codecov/codecov-action@81cd2dc8148241f03f5839d295e000b8f761e378
-  uses: codecov/codecov-action@v3.1.0
-  with:
-    # Specify whether the Codecov output should be verbose
-    verbose: true
+name: Android
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: macOS-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-java@v1
+        with:
+          java-version: 1.8
+      - name: Build debug
+        run: bash ./gradlew build jacocoTestReport assembleAndroidTest
+      - name: run tests
+        uses: reactivecircus/android-emulator-runner@v1
+        with:
+          api-level: 29
+          script: ./gradlew connectedCheck
+      - name: Upload coverage to Codecov
+        run: |
+          curl -Os https://uploader.codecov.io/latest/macos/codecov
+          chmod +x codecov
+          ./codecov
