@@ -1,4 +1,4 @@
-rootProject.name = 'travistest'
+rootProject.name = 'codecovtest'
 include 'submodule'
 include 'anothermodule'
 
