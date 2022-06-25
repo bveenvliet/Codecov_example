@@ -1,6 +1,4 @@
-[![Build Status](https://travis-ci.org/ardenit/jacoco-codecov-gradle-multimodule-example.svg?branch=master)](https://travis-ci.org/ardenit/jacoco-codecov-gradle-multimodule-example)
-[![Code Coverage](https://codecov.io/github/ardenit/jacoco-codecov-gradle-multimodule-example/coverage.svg)](https://codecov.io/gh/ardenit/jacoco-codecov-gradle-multimodule-example)
+[![codecov](https://codecov.io/gh/bveenvliet/Codecov_example/branch/main/graph/badge.svg?token=Q4ALWYXLWN)](https://codecov.io/gh/bveenvliet/Codecov_example)
 
-
-A working example of multimodular Gradle project using JaCoCo, Travis CI and Codecov.
+A working example of multimodular Android Kotlin Gradle project using JaCoCo, and Codecov.
 
