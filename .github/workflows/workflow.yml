@@ -12,12 +12,7 @@ jobs:
         with:
           java-version: 1.8
       - name: Build debug
-        run: bash ./gradlew build jacocoTestReport assembleAndroidTest
-      - name: run tests
-        uses: reactivecircus/android-emulator-runner@v1
-        with:
-          api-level: 29
-          script: ./gradlew connectedCheck
+        run: bash ./gradlew build test jacocoTestReport assemble
       - name: Upload coverage to Codecov
         run: |
           curl -Os https://uploader.codecov.io/latest/macos/codecov
