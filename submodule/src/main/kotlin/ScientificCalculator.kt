@@ -1,3 +1,5 @@
+package com.example.submodule
+
 import kotlin.math.sqrt
 
 class ScientificCalculator {

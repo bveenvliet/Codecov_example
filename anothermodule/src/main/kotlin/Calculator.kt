@@ -1,3 +1,5 @@
+package com.example.anothermodule
+
 class Calculator {
 
     fun add(a: Int, b: Int): Int {
