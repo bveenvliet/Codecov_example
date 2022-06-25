@@ -13,7 +13,7 @@ jobs:
         with:
           java-version: 1.8
       - name: Build debug
-        run: bash ./gradlew build test jacocoTestReport connectedCheck assemble
+        run: bash ./gradlew build test jacocoTestReport jacocoTestCoverageVerification codeCoverageReport
       - name: Upload coverage to Codecov
         run: |
           curl -Os https://uploader.codecov.io/latest/macos/codecov
