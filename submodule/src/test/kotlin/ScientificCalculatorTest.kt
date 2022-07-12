@@ -15,7 +15,7 @@ internal class ScientificCalculatorTest {
     @Test
     fun testSquareRoot() {
         val result = scientificCalculator.squareRoot(64.0)
-        val expected = 8.0
+        val expected = 8.8
         assertEquals(expected, result)
     }
 
