@@ -39,6 +39,7 @@ internal class CalculatorTest {
         assertEquals(expected, result)
     }
 
+    @Test
     fun testSquare_failure() {
         val result = Calculator().square(6)
         val failureExpected = 35
@@ -48,7 +49,7 @@ internal class CalculatorTest {
     @Test
     fun testDivide_failure() {
         val result = Calculator().divide(6, 3)
-        val failureExpected = 2
+        val failureExpected = 3
         assertEquals(failureExpected, result)
     }
 }
