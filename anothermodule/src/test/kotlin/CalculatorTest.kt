@@ -31,4 +31,25 @@ internal class CalculatorTest {
         val expected = 2
         assertEquals(expected, result)
     }
+
+    @Test
+    fun testSquare() {
+        val result = Calculator().square(6)
+        val expected = 36
+        assertEquals(expected, result)
+    }
+
+    @Test
+    fun testSquare_failure() {
+        val result = Calculator().square(6)
+        val failureExpected = 35
+        assertEquals(failureExpected, result)
+    }
+
+    @Test
+    fun testDivide_failure() {
+        val result = Calculator().divide(6, 3)
+        val failureExpected = 3
+        assertEquals(failureExpected, result)
+    }
 }

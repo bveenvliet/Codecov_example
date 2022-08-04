@@ -1,4 +1,4 @@
 rootProject.name = 'codecovtest'
 include 'submodule'
 include 'anothermodule'
-include ':app'
+//include ':app'
